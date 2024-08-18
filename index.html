@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Daire's Survey Form</h1>
+        <p id="description" class="description text-center">
+          Complete this form to help us help you!
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Company Age<span class="clue">(years)</span></label
+          >
+          <input
+            type="number"
+            name="company-age"
+            id="number"
+            min="1"
+            max="500"
+            class="form-control"
+            placeholder="Years since inception of your company"
+          />
+        </div>
+        <div class="form-group">
+          <p>Which industry is your company in?</p>
+          <select id="dropdown" name="industry" class="form-control" required>
+            <option disabled selected value>Select industry</option>
+            <option value="technology">Technology</option>
+            <option value="healthcare">Healthcare</option>
+            <option value="energy">Energy</option>
+            <option value="finance">Finance and Banking</option>
+            <option value="retail">Consumer Goods and Retail</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Which service would you like our help with?</p>
+          <label>
+            <input
+              name="service"
+              value="website"
+              type="radio"
+              class="input-radio"
+              checked
+            />Website</label
+          >
+          <label>
+            <input
+              name="service"
+              value="mobile-app"
+              type="radio"
+              class="input-radio"
+            />Mobile App</label
+          >
+
+          <label
+            ><input
+              name="service"
+              value="website-app"
+              type="radio"
+              class="input-radio"
+            />Both</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Where did you hear about us?</p>
+          <select id="referral" name="referral" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="social-media">Social Media (e.g., Facebook, Instagram, Twitter)</option>
+            <option value="online-search">Online Search (e.g., Google, Bing)</option>
+            <option value="refferal">Friend or Family Referral</option>
+            <option value="advert">Advertisement (e.g., TV, Radio, Online Ads)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            Select elements you wish include in your app:
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label
+            ><input
+              name="elements"
+              value="user-authentication"
+              type="checkbox"
+              class="input-checkbox"
+            />User Authentication (Sign-Up/Log-In)</label
+          >
+          <label>
+            <input
+              name="elements"
+              value="e-commerce"
+              type="checkbox"
+              class="input-checkbox"
+            />E-commerce Functionality (Shopping Cart, Payment Gateway)</label
+          >
+          <label
+            ><input
+              name="elements"
+              value="social-media"
+              type="checkbox"
+              class="input-checkbox"
+            />Social Media Integration (Sharing, Login)</label
+          >
+          <label
+            ><input
+              name="elements"
+              value="push-notifications"
+              type="checkbox"
+              class="input-checkbox"
+            />Push Notifications</label
+          >
+          <label
+            ><input
+              name="elements"
+              value="search"
+              type="checkbox"
+              class="input-checkbox"
+            />Search Functionality</label
+          >
+          <label
+            ><input
+              name="elements"
+              value="user-profile"
+              type="checkbox"
+              class="input-checkbox"
+            />User Profile Management</label
+          >
+          <label
+            ><input
+              name="elements"
+              value="blog"
+              type="checkbox"
+              class="input-checkbox"
+            />Blog/News Section</label
+          >
+          <label
+            ><input
+              name="elements"
+              value="live-chat"
+              type="checkbox"
+              class="input-checkbox"
+            />Live Chat Support</label
+          >
+          <label
+            ><input
+              name="elements"
+              value="contact-form"
+              type="checkbox"
+              class="input-checkbox"
+            />Contact Forms</label
+          >
+          <label
+            ><input
+              name="elements"
+              value="interactive-map"
+              type="checkbox"
+              class="input-checkbox"
+            />Interactive Maps/Geolocation Services</label
+          >
+          <label
+            ><input
+              name="elements"
+              value="analytics"
+              type="checkbox"
+              class="input-checkbox"
+            />Analytics and Reporting Tools</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Any additional details that we should know?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
